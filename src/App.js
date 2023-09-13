@@ -51,7 +51,7 @@ function App() {
     const results = await directionsService.route({
       origin: originRef.current.value,
       destination: destiantionRef.current.value,
-      // eslint-disable-next-line no-undef
+      // eslint-disable-next-line no-undef123
       travelMode: google.maps.TravelMode.DRIVING,
     })
     setDirectionsResponse(results)
@@ -79,7 +79,7 @@ function App() {
         {/* Google Map Box */}
         <GoogleMap
           center={center}
-          zoom={15}
+          zoom={14}
           mapContainerStyle={{ width: '100%', height: '100%' }}
           options={{
             zoomControl: false,
